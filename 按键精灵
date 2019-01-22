@@ -1,1 +1,6 @@
+Hwnd = Plugin.Window.Find("OpusApp", "文档1 - Word")      //父窗-得一级一级找下去
+Hwnd1 = Plugin.Window.FindEx(Hwnd, 0, "_WwF", 0)
+Hwnd2 = Plugin.Window.FindEx(Hwnd1, 0, "_WwB", 0)
+Hwnd3 = Plugin.Window.FindEx(Hwnd2, 0, "_WwG", 0)
 
+TracePrint Hwnd3
