@@ -3,9 +3,11 @@
 #include <cmath>           //或者<math.h>
 using namespace std
 
-int Fac(int a;int b;int c);     //函数声明-非必需
 
-struct Bala   //结构体声明
+
+int Bala(int,int,int);     //函数声明-非必需
+
+struct Fac   //结构体声明
 {
 int month;int day;int year;
 };        //需不需要分号
@@ -22,15 +24,33 @@ private:
 int a1;int b1;int c1;   
 }
 
+class Date
+{
+public
+Date(int, int, int)     //同Time一样定义构造函数
+friend void Time::display(Date &)   //声明Time类中的display函数为该类的友元函数
+}
+
 Time::Time(int a,int b,int c)     //定义类Time的构造函数-然后在主函数中可通过Time asd(1,2,3)来定义Time类对象asd
 {
 a1=a;b1=b;c1=c;
 }
 
-class Dctc
+void Time::display(Date &d)
 {
-public
+cout<<d.a2<<d.b2<<d.c2<<endl;    //输出Date中的私有数据
+cout<<a1<<b1<<c1<<endl;         //输出Time中(本类)的私有数据
 }
+
+int main()
+{
+Time asd(1,2,3);
+Date fgh(4,5,6);
+Time.display(fgh)；        //分别输出Time和Date中的私有数据
+}
+
+
+
 
 
 int main()      //或者void main(void)等吗
