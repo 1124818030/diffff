@@ -1,14 +1,30 @@
 #include <iostream>
+#include <string>
 using namespace std
+
+int Fac(int a;int b;int c);     //函数声明-非必需
+
+struct Data   //结构体声明
+{
+int month;int day;int year;
+};        //需不需要分号
+
 int main()
 {
-int a = 0;
+int a = 0;      //还有其他如double-char-string-float等定义
+char str1[] = "SHENMEJIBAWANYI";  //或者char str1[20]等
+string str2 = "SHENMEJIBAWANYI";
+char *str3 = "SHENMEJIBAWANYI";   //字符指针
+
+cout<<str3<<endl;
 cout<<"a="<<a<<endl;
 return 0;
 }
 
-int fac(int n)     //定义函数
+int Fac(int a,int b,int c)     //定义函数
 {
+c=a;a=b;b=c;
 }
+
 
 
