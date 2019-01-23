@@ -1,30 +1,74 @@
 #include <iostream>
 #include <string>
+#include <cmath>           //或者<math.h>
 using namespace std
 
 int Fac(int a;int b;int c);     //函数声明-非必需
 
-struct Data   //结构体声明
+struct Bala   //结构体声明
 {
 int month;int day;int year;
 };        //需不需要分号
 
-int main()
+class Time
+{
+public:
+Time(int, int, int)    //声明构造函数-可于此处或外面定义构造函数或
+void display(Date &)    //display是成员函数-形参是Dctc类对象的引用
+
+protected:
+
+private:
+int a1;int b1;int c1;   
+}
+
+Time::Time(int a,int b,int c)     //定义类Time的构造函数-然后在主函数中可通过Time asd(1,2,3)来定义Time类对象asd
+{
+a1=a;b1=b;c1=c;
+}
+
+class Dctc
+{
+public
+}
+
+
+int main()      //或者void main(void)等吗
 {
 int a = 0;      //还有其他如double-char-string-float等定义
+const int a = 0;    //表示a的值不能变-不能写成const int a;a=5(Const项不能被赋值)
 char str1[] = "SHENMEJIBAWANYI";  //或者char str1[20]等
 string str2 = "SHENMEJIBAWANYI";
 char *str3 = "SHENMEJIBAWANYI";   //字符指针
 
+cin>>a>>endl;             //输入输出返回
 cout<<str3<<endl;
-cout<<"a="<<a<<endl;
+cout<<"a="<<a<<"\n";
 return 0;
 }
 
-int Fac(int a,int b,int c)     //定义函数
+int Bala(int a,int b,int c)     //定义函数
 {
 c=a;a=b;b=c;
 }
+
+
+结构体/Struct-类/Class(设置成员访问类型/成员函数/继承)
+形参/Formal(定义f)-实参/Actual(调用f)；对象(具体/占空间)-类(抽象/不占空间)-对象的类型为类
+友元函数(Friend/可访问类)-友元类(关系单向且不能传递)；
+Private-Public-Protected；This指针(指向本类的指针)
+构造函数(对象初始化(无返回值/无类型)/与类同名)-析构函数-先构造的后析构/先析构的后构造
+共用数据保护(Const)-常对象-常对象成员；继承(接收全部/调整/增加)-派生-公有继承/私有继承/保护继承
+多重继承(继承多个类)；虚函数(通过基类指针访问派生类的同名f)-纯虚函数(为派生类保留f名字以定义)
+重载运算符(大多数)-双目运算符(二元)/单目运算符-流插入/流提取运算符
+ASCII文件(文本/每个字节放个ASCII代码)-二进制文件(按原形式放)；
+
+输入输出
+C-scanf/prinf函数
+C++-调用输入输出流库中的流对象cin/cout实现
+控制语句
+①if-for-while-do while
+②continue-break-goto-switch-return
 
 
 
