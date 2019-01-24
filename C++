@@ -56,6 +56,7 @@ Time.display(fgh)；        //分别输出Time和Date中的私有数据
 int main()      //或者void main(void)等吗
 {
 int a = 0;      //还有其他如double-char-string-float等定义
+int a[3][4] = {{1},{0,1},{0,0,1}}   //数组部分赋值-起始数据为a[0][0]
 const int a = 0;    //表示a的值不能变-不能写成const int a;a=5(Const项不能被赋值)
 char str1[] = "SHENMEJIBAWANYI";  //或者char str1[20]等
 string str2 = "SHENMEJIBAWANYI";
@@ -96,6 +97,20 @@ C++-调用输入输出流库中的流对象cin/cout实现
 比较开销①固定n(n-1)/2②平均n(n-1)/4
 交换开销①2*(n-1)②平均n(n-1)/4
 ※效率取决于单次比较和交换的开销比-交换费时
+
+局部变量(f内)-全局变量(f外/始终占用存储/通用性降低)
+静态变量-动态变量
+实参-形参
+
+C++数组转化为不定长的指针(无越界检查)-故数组间不可复制
+※数组复制消耗内存过大
+
+C++数组下标以0开始/MATLAB以1开始
+p[n]等价于*(p+n)；C/C++中数组和指针类似-下标表示该元素相对首元素的偏移
+若从1开始p[n]等价于*(p+n-1)
+
+
+
 
 
 
