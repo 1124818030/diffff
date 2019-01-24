@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <string>         //对=/==等符号进行重载使之能用于string类对象的运算等
 #include <cmath>           //或者<math.h>
 using namespace std
 
@@ -109,6 +109,8 @@ C++数组下标以0开始/MATLAB以1开始
 p[n]等价于*(p+n)；C/C++中数组和指针类似-下标表示该元素相对首元素的偏移
 若从1开始p[n]等价于*(p+n-1)
 
+"\0"代表ASCII码为0的字符-空操作符(啥都不干)
+程序通过检测"\0"位置来判断字符串是否结束
 
 
 
