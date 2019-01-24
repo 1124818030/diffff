@@ -139,7 +139,7 @@ e进制-信息表达最优解-2/3最接近
 编译器-JDK开发包的bin文件的javac.exe
 
 package Javawork.wenjianming  //最多1句-把编译生成的所有class文件放入该包中
-import -;   //使用包(可多个)
+import -.*;   //使用包(可多个)
 public class wenjianming{……}   //公共类-名称与文件名相同
 class A{};  //定义类(可多个)
 Interface B   //定义接口(可多个)
@@ -147,12 +147,17 @@ Interface B   //定义接口(可多个)
 -3%-10结果-1  //取余
 Frame对象默认布局管理器BorderLayout
 p.add(b,"south")  //在容器组件p下面加按钮b-north/south/east/west
-Button b = new button()  //声明并创建按钮对象b-其他int之类的类似
+Button b = new button()  //声明并创建按钮对象b-其他int之类的类似-用类(模板)创建对象(实例)并分配内存
 Java类中只允许单继承-接口可多继承
 非访问控制符-static/abstract/final(定义符号常量)
 引用数据类型-类/接口/数组
 string非基本数据类型-为对象
 Java布尔型true/false不对应1/0
+
+private JLabel[] lab;
+lab = new JLabel[]{new JLabel("为什么"),new JLabel("怎么样")};   //引用即为lab[0],lab[1]等
+pan1.add(lab[1])    //向面板添加组件
+
 
 
 
