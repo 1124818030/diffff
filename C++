@@ -120,6 +120,12 @@ p[n]等价于*(p+n)；C/C++中数组和指针类似-下标表示该元素相对�
 结构体变量.成员名 = *(p).成员名 = p->成员名(->指向运算符)
 stu.num = *(p).num = p->num
 
+int *p  = new int[10];      //建立动态数组-把指针当做数组名用
+delete []p;
+※不要用delete删不是new分配的内存-不要删2次-delete删空指针安全
+※若用new []为数组分配内存-则delete []
+※若用new为实体分配内存-则delete 
+
 
 定义性声明=定义(建立存储空间的声明)
 引用性声明=声明(不需建立存储的声明)
@@ -137,7 +143,9 @@ void swap(int *a, int *b)
 int main(){swap(&a, &b)}
 ③传递引用(修改形参会直接修改实参)
 
-&左值引用-&&右值引用
+&左值引用-逻辑与/非简洁与
+&&右值引用-条件与/简洁与
+
 
 
 
@@ -156,10 +164,10 @@ class A{};  //定义类(可多个)
 Interface B   //定义接口(可多个)
 
 -3%-10结果-1  //取余
-Frame对象默认布局管理器BorderLayout
-p.add(b,"south")  //在容器组件p下面加按钮b-north/south/east/west
+Window/Dialog/Frame对象默认布局管理器BorderLayout(上下左右中)-其他FlowLayout/GridLayout/CardLayout
+※public BorderLayout(int h, int v)  //h(左右)-v(上下)
+p.add(b,"south")  //在容器组件p下面加按钮b-north/south/east/west/center
 Button b = new button()  //声明并创建按钮对象b-其他int之类的类似-用类(模板)创建对象(实例)并分配内存
-Java类中只允许单继承-接口可多继承
 非访问控制符-static/abstract/final(定义符号常量)
 引用数据类型-类/接口/数组
 string非基本数据类型-为对象
@@ -168,6 +176,17 @@ Java布尔型true/false不对应1/0
 private JLabel[] lab;  //创建类为JLabel[]的名为lab的吗
 lab = new JLabel[]{new JLabel("为什么"),new JLabel("怎么样")};   //引用即为lab[0],lab[1]等
 pan1.add(lab[1])    //向面板添加组件
+
+面向对象特征-继承/多态-包-访问修饰符/非访问修饰符-接口
+this(本类)/super(调用父类)代表对象-静态方法中不能用该关键字
+static后不需要创建对象-直接类名引用-如random等
+单(多)继承-单个类只有单(多)个父亲
+Java类中只允许单继承-允许多重继承(A/B-B/C)-接口可多继承
+父类-多个类向上抽取共性
+
+
+
+
 
 
 
