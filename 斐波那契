@@ -1,4 +1,4 @@
-int f1(int n) {        //递归O(2^n)-时间复杂度看成二叉树求节点个数吗
+int f1(int n) {        //递归O(2^n)-时间复杂度看成二叉树求节点个数(得到f(10)需知道f(9)/f(8)-f(9)又需知道f(8)/f(7)-有大量重复计算)
 	if (n == 1 || n == 2){
 		return 1;
 	}
@@ -8,11 +8,10 @@ int f1(int n) {        //递归O(2^n)-时间复杂度看成二叉树求节点个
 }
 
 
-int f2(int n) {         //循环O(n)
+int f2(int n) {         //A循环O(n)-o(n)
 	int *A = new int ;
-	A[0] = 1; 
-  A[1] = 1;
-  A[2] = 0;
+	A[0] = 0; 
+  	A[1] = 1;
   
 	for(int i = 2; i < n; i++){
 		A[i] = A[i-1] + A[i-2];
@@ -21,7 +20,7 @@ int f2(int n) {         //循环O(n)
 }
 
 
-int f22(int n) {          //循环2
+int f22(int n) {          //B循环O(n)-o(1)
     int f0 = 1;  
     int f1 = 1;  
     int f2 = 0;  
