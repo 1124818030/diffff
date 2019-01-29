@@ -177,12 +177,18 @@ private JLabel[] lab;  //创建类为JLabel[]的名为lab的吗
 lab = new JLabel[]{new JLabel("为什么"),new JLabel("怎么样")};   //引用即为lab[0],lab[1]等
 pan1.add(lab[1])    //向面板添加组件
 
-面向对象特征-封装/继承/多态-包-访问修饰符/非访问修饰符-接口
-this(本类)/super(调用父类)代表对象-静态方法中不能用该关键字
-static后不需要创建对象-直接类名引用-如random等
-单(多)继承-单个类只有单(多)个父亲
-Java类中只允许单继承-允许多重继承(A/B-B/C)-接口可多继承
-父类-多个类向上抽取共性
+public class ASD{
+public static void main(String[] args){
+String s1/s2 = new String("HELLO");
+System.out.println(s1==s2);       //false
+System.out.println(s1.equals(s2)); //true
+String ss1/ss2 = "HELLOO"
+---------------------------       //true
+---------------------------       //true
+}
+}
+
+
 
 
 
