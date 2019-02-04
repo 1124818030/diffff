@@ -50,6 +50,37 @@ idx1 = s_in.find("8oz")
 res_2_2 = s_in[inx0,idx1]
 
 
+b=a
+a==b            //true
+a is b          //true
+b=copy.copy(a)  
+a==b            //true
+a is b          //false
+
+range(n)
+range(m,n)
+range(m,n,s)   
+
+for i in range(5):
+for i,j in range([1,2][3,4]):
+
+if-else
+continue
+break 
+
+
+try: 
+except:
+
+
+import random 
+
+
+
+
+
+
+
 
 
 
