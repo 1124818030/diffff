@@ -1,0 +1,58 @@
+Python3 -m venv ~/venv/Py36/
+pip3 --proxy=http://3870491:Dl19970530_@134.157.103.2:3128 install jupyter
+cd     //
+cd ~   //
+
+print("a","b","c")
+s='hello'   //s[2]=s[-3]
+print('a'*5)
+
+
+-user name 
+-group name 
+-uid n
+-gid n
+
+ctrl+c zhongduan
+
+name.count('a')
+
+import math
+dir(math)
+improt cmath    //fushu
+Z=1+2j
+print (Z)
+
+divmod(9,2)=(4,1)
+
+math.floor(a)
+math.ceil(a)   //sishewuru
+
+hex()    //jinzhizhuanhuan
+oct()
+bin()
+type()   //shuchuleixing-int/floatdeng
+
+print(not(True and False))      //True
+print(not True or not False)    //False
+
+s='0123456789'
+print(s[0:3])      //s[0][1][2]gong3geshu
+print(s[:3])       //qian3
+print(s[-3:])      //hou3-maohaochushenglue0
+print("Every second charcter",s[0:-1:2])   //Without last
+print("Every second charcter",s[0::2])   //With last
+
+zifuchuanbunengzhijiegaimougeweizhidezhi
+
+idx0 = s_in.find("lizu")+len("lizu")
+idx1 = s_in.find("8oz")
+res_2_2 = s_in[inx0,idx1]
+
+
+
+
+
+
+
+
