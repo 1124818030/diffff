@@ -2,6 +2,7 @@ Python3 -m venv ~/venv/Py36/
 pip3 --proxy=http://3870491:Dl19970530_@134.157.103.2:3128 install jupyter
 cd     //
 cd ~   //
+Ctrl+C   //中断
 
 #-*- coding: utf-8 -*        //开头注释-文件里写中文-否则默认使用ASCII编码
 
@@ -9,28 +10,25 @@ print("a","b","c")
 s='hello'   //s[2]=s[-3]
 print('a'*5)
 
-
 -user name 
 -group name 
 -uid n
 -gid n
 
-ctrl+c zhongduan
-
 name.count('a')
 
 import math
 dir(math)
-improt cmath    //fushu
+improt cmath    //复数
 Z=1+2j
 print (Z)
 
 divmod(9,2)=(4,1)
 
 math.floor(a)
-math.ceil(a)   //sishewuru
+math.ceil(a)   //四舍五入
 
-hex()    //jinzhizhuanhuan
+hex()    //进制转换
 oct()
 bin()
 type()   //shuchuleixing-int/floatdeng
@@ -39,18 +37,17 @@ print(not(True and False))      //True
 print(not True or not False)    //False
 
 s='0123456789'
-print(s[0:3])      //s[0][1][2]gong3geshu
-print(s[:3])       //qian3
-print(s[-3:])      //hou3-maohaochushenglue0
+print(s[0:3])      //s[0][1][2]共3个数
+print(s[:3])       //前3个数
+print(s[-3:])      //后3个数-冒号处省略0
 print("Every second charcter",s[0:-1:2])   //Without last
 print("Every second charcter",s[0::2])   //With last
 
-zifuchuanbunengzhijiegaimougeweizhidezhi
+字符串不能直接改某个位置的值
 
 idx0 = s_in.find("lizu")+len("lizu")
 idx1 = s_in.find("8oz")
 res_2_2 = s_in[inx0,idx1]
-
 
 b=a
 a==b            //true
@@ -70,13 +67,21 @@ if-else
 continue
 break 
 
-
 try: 
 except:
 
 
 import random 
 
+Step Over      //执行并跳过子函数
+Step In           //进入子函数
+Step Out        //执行子函数剩下部分
+Editor-Font       //改字体
+PEP(Python文档)
+Interpreter-解释器版本
+单引号/双引号均可-但string中本就含'A'等则用" 'A' and 'B' "更方便
+3个单引号/双引号等效-同'A'和"A"-可用来分行(或者字符串中\n)
+#加注释
 
 
 
