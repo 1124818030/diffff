@@ -3,6 +3,8 @@ pip3 --proxy=http://3870491:Dl19970530_@134.157.103.2:3128 install jupyter
 cd     //
 cd ~   //
 
+#-*- coding: utf-8 -*        //开头注释-文件里写中文-否则默认使用ASCII编码
+
 print("a","b","c")
 s='hello'   //s[2]=s[-3]
 print('a'*5)
