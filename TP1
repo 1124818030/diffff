@@ -1,0 +1,35 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+T = 2
+h = 1.e-3
+g = 10
+nsteps = int(T/h)
+
+
+x0 = np.random.rand(4,1)
+xEvolution = np.zeros((4, nsteps+2))
+xEvolution[:,[0]] = x0
+
+dx = np.zeros((4,1))
+dx[3,] = g
+for k in range(nsteps):
+    dx[0,0] = xEvolution[2,k-1]
+    dx[1,0] = xEvolution[3,k-1]
+    xEvolution[:, [k]] = xEvolution[:,[k-1]] + h * dx
+
+dx = np.zeros((4,1))
+dx[3,] = g * h
+for k in range(nsteps):
+    dx[2, 0] = xEvolution[3, k - 1]
+    xEvolution[:, [k]] = xEvolution[:, [k-1]] + dx
+
+t = np.arange(0,T,nsteps+1,dtype = np.float_)
+fig,subplots = plt.subplots(2,2)
+
+subplots[0,0].plot(xEvolution[0,:],xEvolution[1,:])
+# subplots[1,0].plot(t, xEvolution[3,:])
+
+energie = xEvolution[1,:]*(-g) + np.sum(np.square(xEvolution[2,:]),axis=0)/2
+subplots[1,1].plot(t,energie)
+plt.show()
