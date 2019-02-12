@@ -76,7 +76,7 @@ import random
 isinstance(a,b)    
 type(a) == type(b)
 
-numpy bao
+numpy bao     //scipy-matplotlib
 .linspace(a1,a2,nb)     //a1-a2jianxuanzhe nb geshu
 .arange(a)      //0-a dezhengshu
 .numpy.version.version
