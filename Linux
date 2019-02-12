@@ -7,8 +7,6 @@ cd ~   //
 cd Bureau/Intro/jupyter notebook  
 Ctrl+C   //中断
 
-#-*- coding: utf-8 -*        //开头注释-文件里写中文-否则默认使用ASCII编码
-xuanzhongbingCtrl+/       //duohangzhushi
 
 print("a","b","c")
 s='hello'   //s[2]=s[-3]
@@ -28,7 +26,6 @@ Z=1+2j
 print (Z)
 
 divmod(9,2)=(4,1)
-
 math.floor(a)
 math.ceil(a)   //四舍五入
 
@@ -76,6 +73,23 @@ except:
 
 
 import random 
+isinstance(a,b)    
+type(a) == type(b)
+
+numpy bao
+.linspace(a1,a2,nb)     //a1-a2jianxuanzhe nb geshu
+.arange(a)      //0-a dezhengshu
+.numpy.version.version
+.array([1,2,3,4])    //shuzu
+.zeros-ones-eye
+.ndim   //weishu
+.shape
+.size
+.dtype   //yuansuleixing
+.trace 
+.transpose
+.copy
+
 
 Step Over      //执行并跳过子函数
 Step In           //进入子函数
@@ -86,6 +100,9 @@ Interpreter-解释器版本
 单引号/双引号均可-但string中本就含'A'等则用" 'A' and 'B' "更方便
 3个单引号/双引号等效-同'A'和"A"-可用来分行(或者字符串中\n)
 #加注释
+xuanzhongbingCtrl+/       //duohangzhushi
+#-*- coding: utf-8 -*        //开头注释-文件里写中文-否则默认使用ASCII编码
+
 
 
 
