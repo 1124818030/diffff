@@ -1,11 +1,14 @@
 Python3 -m venv ~/venv/Py36/
-pip3 --proxy=http://3870491:Dl19970530@134.157.103.2:3128 install jupyter
+pip3 --proxy=http://3870491:Dl19970530@134.157.103.2:3128 install jupyter/numpy/pyqt5
+pip3 --no-cache-dir --proxy----------------------------------------------------------
+source ~/venv/Py36/bin/activate
 cd     //
 cd ~   //
 cd Bureau/Intro/jupyter notebook  
 Ctrl+C   //中断
 
 #-*- coding: utf-8 -*        //开头注释-文件里写中文-否则默认使用ASCII编码
+xuanzhongbingCtrl+/       //duohangzhushi
 
 print("a","b","c")
 s='hello'   //s[2]=s[-3]
