@@ -5,8 +5,6 @@ source ~/venv/Py36/bin/activate
 cd     //
 cd ~   //
 cd Bureau/Intro/jupyter notebook  
-Ctrl+C   //中断
-
 
 print("a","b","c")
 s='hello'   //s[2]=s[-3]
@@ -19,20 +17,9 @@ print('a'*5)
 
 name.count('a')
 
-import math
-dir(math)
-improt cmath    //复数
-Z=1+2j
-print (Z)
-
 divmod(9,2)=(4,1)
 math.floor(a)
 math.ceil(a)   //四舍五入
-
-hex()    //进制转换
-oct()
-bin()
-type()   //shuchuleixing-int/floatdeng
 
 print(not(True and False))      //True
 print(not True or not False)    //False
@@ -64,14 +51,6 @@ range(m,n,s)
 for i in range(5):
 for i,j in range([1,2][3,4]):
 
-if-else
-continue
-break 
-
-try: 
-except:
-
-
 import random 
 isinstance(a,b)    
 type(a) == type(b)
@@ -91,17 +70,6 @@ numpy bao     //scipy-matplotlib
 .copy
 
 
-Step Over      //执行并跳过子函数
-Step In           //进入子函数
-Step Out        //执行子函数剩下部分
-Editor-Font       //改字体
-PEP(Python文档)
-Interpreter-解释器版本
-单引号/双引号均可-但string中本就含'A'等则用" 'A' and 'B' "更方便
-3个单引号/双引号等效-同'A'和"A"-可用来分行(或者字符串中\n)
-#加注释
-xuanzhongbingCtrl+/       //duohangzhushi
-#-*- coding: utf-8 -*        //开头注释-文件里写中文-否则默认使用ASCII编码
 
 
 
