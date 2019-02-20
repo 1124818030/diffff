@@ -17,10 +17,6 @@ print('a'*5)
 
 name.count('a')
 
-divmod(9,2)=(4,1)
-math.floor(a)
-math.ceil(a)   //四舍五入
-
 print(not(True and False))      //True
 print(not True or not False)    //False
 
@@ -30,8 +26,6 @@ print(s[:3])       //前3个数
 print(s[-3:])      //后3个数-冒号处省略0
 print("Every second charcter",s[0:-1:2])   //Without last
 print("Every second charcter",s[0::2])   //With last
-
-字符串不能直接改某个位置的值
 
 idx0 = s_in.find("lizu")+len("lizu")
 idx1 = s_in.find("8oz")
@@ -69,8 +63,19 @@ numpy bao     //scipy-matplotlib
 .transpose
 .copy
 
+divmod(9,2)=(4,1)  //结合商和余数
+math.floor(a)
+math.ceil(a)       //四舍五入
+math.pow(x,y)      //x的y次方=x**y
+math.pow(x,y,z)    //x的y次方对z取模=pow(x,y)%z
 
-
+str()-repr()            //将对象转化为字符串形式
+Interpreter-解释器版本
+单引号/双引号均可-但string中本就含'A'等则用" 'A' and 'B' "更方便
+3个单引号/双引号等效-同'A'和"A"-可用来分行(或者字符串中\n)
+#-*- coding: utf-8 -*        //开头注释使得文件里写中文-否则默认使用ASCII编码
+a=input("Enter x: ")          //Python3的input默认接收str型    
+字符串不能直接改某个位置的值
 
 
 
