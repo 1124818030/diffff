@@ -56,15 +56,15 @@ isinstance(a,b)
 type(a) == type(b)
 
 numpy bao     //scipy-matplotlib
-.linspace(a1,a2,nb)     //a1-a2jianxuanzhe nb geshu
-.arange(a)      //0-a dezhengshu
+.linspace(a1,a2,nb)     //a1-a2间选择NB个数
+.arange(a)      //0-a的整数
 .numpy.version.version
-.array([1,2,3,4])    //shuzu
+.array([1,2,3,4])    //数组
 .zeros-ones-eye
-.ndim   //weishu
+.ndim   //维数
 .shape
 .size
-.dtype   //yuansuleixing
+.dtype   //元素类型
 .trace 
 .transpose
 .copy
