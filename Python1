@@ -1,0 +1,19 @@
+"""读取文件input并写入output"""
+file1 = open('input.txt')
+file2 = open('output.txt', 'w')
+
+while True:
+    line = file1.readline()
+    file2.write(line)
+    if not line:
+        break
+        
+file1.close()
+file2.close()
+
+
+
+"""for循环"""
+file2 = open('output.txt', 'w')
+for line in open('input.txt')
+    file2.write(line)
